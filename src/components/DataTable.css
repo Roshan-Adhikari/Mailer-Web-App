@@ -1,0 +1,59 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.data-table th {
+  padding: 16px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.data-table td {
+  padding: 16px;
+  color: var(--text-primary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  font-size: 0.95rem;
+}
+
+.data-table tr {
+  transition: background 0.2s ease;
+}
+
+.data-table tr.clickable:hover {
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px !important;
+  color: var(--text-secondary) !important;
+}
+
+.tag-pill {
+  display: inline-block;
+  padding: 4px 10px;
+  background: var(--bg-tertiary);
+  color: var(--accent-primary);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-right: 6px;
+  margin-bottom: 4px;
+}

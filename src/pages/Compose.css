@@ -1,0 +1,77 @@
+.compose-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.compose-layout {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.compose-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.routing-section {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.template-section {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.custom-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+}
+
+.editor-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.body-editor {
+  flex: 1;
+  resize: none;
+  min-height: 200px;
+  font-family: inherit;
+  line-height: 1.6;
+}
+
+.subject-preview, .body-preview {
+  background: rgba(0,0,0,0.2);
+  cursor: not-allowed;
+  min-height: 48px;
+}
+
+.body-preview {
+  flex: 1;
+  min-height: 200px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+
+.var-highlight {
+  background: var(--accent-gradient);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9em;
+  margin: 0 2px;
+}
